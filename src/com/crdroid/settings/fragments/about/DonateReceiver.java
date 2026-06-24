@@ -138,7 +138,8 @@ public class DonateReceiver extends BroadcastReceiver {
                 .addAction(0, ctx.getString(R.string.crdroid_dont_show_again_action), dismissForeverPi)
                 .setAutoCancel(true)
                 .setOnlyAlertOnce(true)
-                .setPriority(NotificationCompat.PRIORITY_HIGH);
+                .setSilent(true)
+                .setPriority(NotificationCompat.PRIORITY_LOW);
 
         nm.notify(DONATE_NOTIFICATION_ID, b.build());
 
@@ -150,9 +151,10 @@ public class DonateReceiver extends BroadcastReceiver {
         NotificationChannel ch = new NotificationChannel(
                 DONATE_CHANNEL_ID,
                 ctx.getString(R.string.crdroid_channel_name),
-                NotificationManager.IMPORTANCE_HIGH
+                NotificationManager.IMPORTANCE_LOW
         );
         ch.setDescription(ctx.getString(R.string.crdroid_channel_desc));
+        ch.setSound(null, null);
         nm.createNotificationChannel(ch);
     }
 

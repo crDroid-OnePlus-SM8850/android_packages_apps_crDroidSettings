@@ -100,6 +100,7 @@ Ashle-XDA [SLOVAK Preklad]</string>
 Malý dar pomáha udržiavať tento projekt pri živote a zlepšovať sa. Túto správu môžete ignorovať, ale vaša podpora pre nás veľa znamená.</string>
     <string name="crdroid_donate_button">Prispieť</string>
     <string name="crdroid_later_button">Možno ďalší mesiac</string>
+    <string name="crdroid_dont_show_again_action">Nezobrazovať znova</string>
     <string name="crdroid_channel_name">crDroid upozornenia</string>
     <string name="crdroid_channel_desc">Oznámenia projektu</string>
     <string name="crdroid_donate_still_needed">Tento mesiac potrebujeme získať %,d €. Pomôž nám dosiahnuť tento cieľ.</string>

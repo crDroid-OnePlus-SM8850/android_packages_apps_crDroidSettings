@@ -99,6 +99,7 @@
 Een kleine donatie helpt dit project in leven te houden en te verbeteren. U kunt dit bericht negeren, maar uw steun betekent veel voor ons.</string>
     <string name="crdroid_donate_button">Doneer nu</string>
     <string name="crdroid_later_button">Misschien volgende maand</string>
+    <string name="crdroid_dont_show_again_action">Niet opnieuw weergeven</string>
     <string name="crdroid_channel_name">crDroid meldingen</string>
     <string name="crdroid_channel_desc">Projectspecifieke notificaties</string>
     <string name="crdroid_donate_still_needed">We hebben deze maand nog €% nodig. Help ons ons ons ons doel te bereiken.</string>

@@ -26,21 +26,29 @@ public class DonateReceiver extends BroadcastReceiver {
     private static final String TAG = "DonateReceiver";
 
     public static final String DONATE_LAST_CHECKED = "pref_donate_checked_in";
+    public static final String DONATE_DISABLED = "pref_donate_disabled";
 
     private static final String DONATE_CHANNEL_ID = "donation_channel";
     private static final int DONATE_NOTIFICATION_ID = 8989;
     private static final int REQ_ALARM = 7611;
+    private static final int REQ_DISMISS_FOREVER = 7612;
 
     public static final long COOLDOWN_MIN = 30 * 24 * 60; // Monthly reminder
     public static final long INITIAL_DELAY_MIN = 30; // 30-minute after first boot
     public static final long REPEAT_DELAY_MIN = 60; // Repeat after 1 hour if not opened
 
     private static final String ACTION_DONATE_NUDGE = "com.crdroid.settings.action.DONATE_NUDGE";
- 
+    private static final String ACTION_DONATE_DISMISS_FOREVER = "com.crdroid.settings.action.DONATE_DISMISS_FOREVER";
+
     @Override
     public void onReceive(Context ctx, Intent intent) {
         final String action = intent != null ? intent.getAction() : null;
         if (action == null) return;
+
+        if (ACTION_DONATE_DISMISS_FOREVER.equals(action)) {
+            disablePermanently(ctx);
+            return;
+        }
 
         UserManager um = ctx.getSystemService(UserManager.class);
         if (um == null) {
@@ -58,6 +66,11 @@ public class DonateReceiver extends BroadcastReceiver {
             return;
         }
 
+        if (isDisabled(ctx)) {
+            Log.d(TAG, "Donate reminders disabled by user, skipping notification");
+            return;
+        }
+
         if (isCoolDownActive(ctx)) {
             Log.d(TAG, "Cooldown period active, skipping notification");
             return;
@@ -69,6 +82,11 @@ public class DonateReceiver extends BroadcastReceiver {
         } else if (ACTION_DONATE_NUDGE.equals(action)) {
             showDonateNotification(ctx);
         }
+    }
+
+    private boolean isDisabled(Context ctx) {
+        return PreferenceManager.getDefaultSharedPreferences(ctx)
+                .getBoolean(DONATE_DISABLED, false);
     }
 
     private boolean isCoolDownActive(Context ctx) {
@@ -107,11 +125,17 @@ public class DonateReceiver extends BroadcastReceiver {
                 PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
         );
 
+        PendingIntent dismissForeverPi = PendingIntent.getBroadcast(
+                ctx, REQ_DISMISS_FOREVER, new Intent(ACTION_DONATE_DISMISS_FOREVER).setPackage(ctx.getPackageName()),
+                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
+        );
+
         NotificationCompat.Builder b = new NotificationCompat.Builder(ctx, DONATE_CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_donate_notification)
                 .setContentTitle(ctx.getString(R.string.crdroid_donate_title))
                 .setContentText(ctx.getString(R.string.crdroid_donate_notification_text))
                 .setContentIntent(contentPi)
+                .addAction(0, ctx.getString(R.string.crdroid_dont_show_again_action), dismissForeverPi)
                 .setAutoCancel(true)
                 .setOnlyAlertOnce(true)
                 .setPriority(NotificationCompat.PRIORITY_HIGH);
@@ -135,5 +159,21 @@ public class DonateReceiver extends BroadcastReceiver {
     public static void cancelNotification(Context ctx) {
         NotificationManager nm = (NotificationManager) ctx.getSystemService(Context.NOTIFICATION_SERVICE);
         nm.cancel(DONATE_NOTIFICATION_ID);
+    }
+
+    public static void disablePermanently(Context ctx) {
+        PreferenceManager.getDefaultSharedPreferences(ctx)
+                .edit()
+                .putBoolean(DONATE_DISABLED, true)
+                .apply();
+
+        AlarmManager am = (AlarmManager) ctx.getSystemService(Context.ALARM_SERVICE);
+        PendingIntent pi = PendingIntent.getBroadcast(
+                ctx, REQ_ALARM, new Intent(ACTION_DONATE_NUDGE).setPackage(ctx.getPackageName()),
+                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
+        );
+        am.cancel(pi);
+
+        cancelNotification(ctx);
     }
 }

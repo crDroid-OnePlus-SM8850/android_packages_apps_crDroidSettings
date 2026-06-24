@@ -99,6 +99,7 @@
 Donasi kecil akan membantu proyek ini tetap berjalan dan berkembang. Anda dapat mengabaikan pesan ini, tetapi dukungan Anda sangat berarti bagi kami.</string>
     <string name="crdroid_donate_button">Donasi sekarang</string>
     <string name="crdroid_later_button">Mungkin bulan depan</string>
+    <string name="crdroid_dont_show_again_action">Jangan tampilkan lagi</string>
     <string name="crdroid_channel_name">Pemberitahuan crDroid</string>
     <string name="crdroid_channel_desc">Pemberitahuan khusus proyek</string>
     <string name="crdroid_donate_still_needed">Kami masih membutuhkan €%,d bulan ini. Bantu kami mencapai target.</string>

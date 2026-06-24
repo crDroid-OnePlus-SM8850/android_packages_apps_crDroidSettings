@@ -99,6 +99,7 @@
 Küçük bir bağış, bu projenin devam etmesine ve gelişmesine yardımcı olur. Bu mesajı kapatabilirsiniz, ancak desteğiniz bizim için çok önemlidir.</string>
     <string name="crdroid_donate_button">Şimdi bağış yap</string>
     <string name="crdroid_later_button">Belki gelecek ay</string>
+    <string name="crdroid_dont_show_again_action">Bir daha gösterme</string>
     <string name="crdroid_channel_name">crDroid bildirimleri</string>
     <string name="crdroid_channel_desc">Projeye özgü bildirimler</string>
     <string name="crdroid_donate_still_needed">Bize bu ay hâlâ %,d € lazım. Hedefimize ulaşmamızda yardımcı olun.</string>

@@ -99,6 +99,7 @@
 Mit einer kleinen Spende trägst du dazu bei, dass das Projekt am Leben bleibt und stetig verbessert wird. Du kannst diese Nachricht wegtippen, aber deine Unterstützung bedeutet uns sehr viel.</string>
     <string name="crdroid_donate_button">Jetzt spenden</string>
     <string name="crdroid_later_button">Vielleicht nächsten Monat</string>
+    <string name="crdroid_dont_show_again_action">Nicht erneut anzeigen</string>
     <string name="crdroid_channel_name">crDroid-Benachrichtigungen</string>
     <string name="crdroid_channel_desc">Projektspezifische Benachrichtigungen</string>
     <string name="crdroid_donate_still_needed">Diesen Monat fehlen uns noch €%,d. Hilf uns dabei, unser Ziel zu erreichen.</string>

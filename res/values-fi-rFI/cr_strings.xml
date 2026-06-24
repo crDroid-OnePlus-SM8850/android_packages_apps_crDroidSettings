@@ -100,6 +100,7 @@ Pienikin lahjoitus auttaa projektin ylläpidossa.
 Voit hylätä tämän viestin mutta tukesi auttaa paljon.</string>
     <string name="crdroid_donate_button">Lahjoita nyt</string>
     <string name="crdroid_later_button">Ehkä ensi kuussa</string>
+    <string name="crdroid_dont_show_again_action">Älä näytä uudelleen</string>
     <string name="crdroid_channel_name">crDroid ilmoitukset</string>
     <string name="crdroid_channel_desc">Project specific notifications</string>
     <string name="crdroid_donate_still_needed">We still need €%,d this month. Help us reach our goal.</string>

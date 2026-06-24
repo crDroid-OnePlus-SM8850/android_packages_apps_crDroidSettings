@@ -99,6 +99,7 @@
 O donație mică ajută la menținerea acestui proiect în viață și la îmbunătățirea lui. Poți respinge acest mesaj, dar suportul tău înseamnă mult pentru noi.</string>
     <string name="crdroid_donate_button">Donează acum</string>
     <string name="crdroid_later_button">Poate luna viitoare</string>
+    <string name="crdroid_dont_show_again_action">Nu mai arăta din nou</string>
     <string name="crdroid_channel_name">Notificări crDroid</string>
     <string name="crdroid_channel_desc">Notificări specifice proiectului</string>
     <string name="crdroid_donate_still_needed">Avem încă nevoie de €%,d în această lună. Ajută-ne să ne atingem obiectivul.</string>

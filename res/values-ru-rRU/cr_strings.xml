@@ -99,6 +99,7 @@
 Небольшое пожертвование поможет поддерживать этот проект в рабочем состоянии и улучшать его. Вы можете отказаться от этого сообщения, но Ваша поддержка очень много значит для нас.</string>
     <string name="crdroid_donate_button">Пожертвовать</string>
     <string name="crdroid_later_button">Может, в следующем месяце</string>
+    <string name="crdroid_dont_show_again_action">Больше не показывать</string>
     <string name="crdroid_channel_name">Уведомления crDroid</string>
     <string name="crdroid_channel_desc">Уведомления, относящиеся к проекту</string>
     <string name="crdroid_donate_still_needed">Нам всё ещё необходимо €%,d в этом месяце. Помогите нам достичь цели.</string>

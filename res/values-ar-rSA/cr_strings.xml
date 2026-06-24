@@ -99,6 +99,7 @@
 تبرع صغير يساعد على إبقاء هذا المشروع على قيد الحياة وتحسينه. يمكنك تجاهل هذه الرسالة، ولكن دعمك يعني الكثير لنا.</string>
     <string name="crdroid_donate_button">تبرع الآن</string>
     <string name="crdroid_later_button">ربما الشهر القادم</string>
+    <string name="crdroid_dont_show_again_action">لا تظهر هذا مرة أخرى</string>
     <string name="crdroid_channel_name">إظهار الإشعارات</string>
     <string name="crdroid_channel_desc">إشعارات مشروع محدد</string>
     <string name="crdroid_donate_still_needed">.</string>

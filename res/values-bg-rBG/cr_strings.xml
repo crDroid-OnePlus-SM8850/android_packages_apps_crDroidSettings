@@ -99,6 +99,7 @@
 Малко дарение помага за поддържането на този проект жив и усъвършенстван. Можете да отхвърлите това съобщение, но вашата подкрепа означава много за нас.</string>
     <string name="crdroid_donate_button">Дарете сега</string>
     <string name="crdroid_later_button">Може би следващия месец</string>
+    <string name="crdroid_dont_show_again_action">Не показвай отново</string>
     <string name="crdroid_channel_name">Известия от crDroid</string>
     <string name="crdroid_channel_desc">Известия, специфични за проекта</string>
     <string name="crdroid_donate_still_needed">Все още ни трябват €%d този месец. Помогнете ни да постигнем целта си.</string>

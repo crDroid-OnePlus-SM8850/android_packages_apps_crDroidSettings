@@ -99,6 +99,7 @@
 תרומה קטנה עוזרת לשמור את הפרוייקט חי ומשתפר. ניתן לסגור הודעה זו, אך תמיכתך משמעותית מאד עבורינו.</string>
     <string name="crdroid_donate_button">תרומה כעת</string>
     <string name="crdroid_later_button">Maybe next month</string>
+    <string name="crdroid_dont_show_again_action">אל תציג שוב</string>
     <string name="crdroid_channel_name">התראות crDroid</string>
     <string name="crdroid_channel_desc">התראות פרטניות לפרוייקט</string>
     <string name="crdroid_donate_still_needed">אנחנו עדיין זקוקים ל- €%,d החודש. עיזרו לנו להגיע ליעד.</string>

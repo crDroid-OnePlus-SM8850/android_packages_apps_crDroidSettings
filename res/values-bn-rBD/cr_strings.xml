@@ -98,6 +98,7 @@
     <string name="crdroid_donate_message">crDroid Android একটি ওপেন-সোর্স প্রজেক্ট, যার ওয়েবসাইট অনলাইন রাখতে, আমাদের বিল্ড সার্ভারগুলো চালু রাখতে এবং আপনার ডিভাইসের জন্য উচ্চ-মানের বিল্ড সরবরাহ করতে আপনার সাহায্যের প্রয়োজন।\n\n একটি ছোট অনুদান এই প্রজেক্টটিকে সচল রাখতে সাহায্য করে।</string>
     <string name="crdroid_donate_button">এখনই দান করুন</string>
     <string name="crdroid_later_button">হয়তো আগামী মাসে</string>
+    <string name="crdroid_dont_show_again_action">আর দেখাবেন না</string>
     <string name="crdroid_channel_name">crDroid বিজ্ঞপ্তি</string>
     <string name="crdroid_channel_desc">প্রকল্প নির্দিষ্ট বিজ্ঞপ্তি</string>
     <string name="crdroid_donate_still_needed">এই মাসে আমাদের এখনও €0,00 প্রয়োজন। আমাদের লক্ষ্য পূরণে সাহায্য করুন।</string>

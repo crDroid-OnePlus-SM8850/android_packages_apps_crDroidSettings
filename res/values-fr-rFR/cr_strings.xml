@@ -99,6 +99,7 @@
 Un petit don aide à maintenir ce projet en vie et à l\'améliorer. Vous pouvez rejeter ce message, mais votre soutien signifie beaucoup pour nous.</string>
     <string name="crdroid_donate_button">Faites un don maintenant</string>
     <string name="crdroid_later_button">Peut-être le mois prochain</string>
+    <string name="crdroid_dont_show_again_action">Ne plus afficher</string>
     <string name="crdroid_channel_name">Notifications crDroid</string>
     <string name="crdroid_channel_desc">Notifications spécifiques au projet</string>
     <string name="crdroid_donate_still_needed">Nous avons encore besoin de %,d € ce mois-ci. Aidez-nous à atteindre notre objectif.</string>
